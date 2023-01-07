@@ -134,7 +134,7 @@ mean_arr, cord_len = kmeans_pp_cen_init(k)
 mean_arr_str = ",".join([str(x) for x in mean_arr])
 
 # calculate the k centroids using C module
-cKmean = dm.fit(k, iter, 0, mean_arr_str, cord_len)
+cKmean = dm.fit(k, iter, eps, mean_arr_str, cord_len)
 
 # printing the indexes of the randomly choosen first k means
 m = 0
