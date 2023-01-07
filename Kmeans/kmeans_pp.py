@@ -1,5 +1,4 @@
 import sys
-# from hw_1py import kmeans
 import numpy as np
 import pandas as pd
 import kmeans as dm
