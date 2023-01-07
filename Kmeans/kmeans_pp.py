@@ -116,12 +116,12 @@ if len(sys.argv) == 6:
     input_file_2 = sys.argv[5]
     k = int(sys.argv[1])
     iter = int(sys.argv[2])
-    eps = sys.argv[3]
+    eps = float(sys.argv[3])
 else:
     input_file_1 = sys.argv[3]
     input_file_2 = sys.argv[4]
     k = int(sys.argv[1])
-    eps = sys.argv[2]
+    eps = float(sys.argv[2])
     iter = 300
 
 # make the new data file using inner join
