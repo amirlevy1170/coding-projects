@@ -14,7 +14,6 @@ def euclidean_dist(arr_1, arr_2):
 
 # gets data file of vectors
 # return list with all the vectors as arrays
-# first list is K vectors as clusters
 def data_builder(filepath):
     f = open(filepath, "r")
     data_vectors = []
