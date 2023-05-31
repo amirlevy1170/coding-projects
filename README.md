@@ -11,8 +11,13 @@ The To-Do List is a web application implemented using Node.js and EJS. It allows
 To use the To-Do List:
 
 Make sure you have Node.js installed on your machine.
+
 Open the command line and navigate to the ToDoList directory.
+
 Run npm install to install the necessary dependencies.
+
 Start the server by running node app.js or npm start.
+
 Open your web browser and go to http://localhost:3000.
+
 You can add and mark tasks as completed using the provided interface.
