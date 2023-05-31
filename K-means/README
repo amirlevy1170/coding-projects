@@ -1,8 +1,23 @@
+# FILES DESCRIPTION:
+kmeans.h : kmeansmodule.c header file.
+kmeans_pp.py : python file for user interface.
+kmeans_to_py.c : C file for the K-means++ algorithm.
+kmeansmodule.c : C module for recieve and send data to kmeans_pp.py.
+setup.py : python file for seting up the module
+vector_init : C file for vector and cord struct and all their related functions.
+
+
+# GENERAL FLOW:
+1. User input: number of means (K), level of Accuracy (epsilon), number of iterations, 2 text files of vectors
+2. kmeans_pp.py: making 1 data file using Pandas inner-join on two text files (corresponding first cord each file)
+2.1 choose first K means using the ++ algorithm (partially randomized) and send this data to C module for final K-means calculation.
+3. kmeansmodule : calculate final k means and send them back to python as double array
+
 # HOW TO RUN:
 open terminal
-run : 
+inside directory, run : 
 1. python3 setup.py build_ext --inplace
 2.1. python3 kmeans_pp.py 3 333 0 input_1_db_1.txt input_1_db_2.txt
 2.2. python3 kmeans_pp.py 7 0 input_2_db_1.txt input_2_db_2.txt
 
-The output is the final centroids.
+The output is an arrey of the first initialize means indexes and a matrix of final centroids.
