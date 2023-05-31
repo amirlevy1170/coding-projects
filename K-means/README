@@ -5,7 +5,7 @@ kmeans_to_py.c : C file for the K-means++ algorithm.
 kmeansmodule.c : C module for recieve and send data to kmeans_pp.py.
 setup.py : python file for seting up the module
 vector_init : C file for vector and cord struct and all their related functions.
-
+*.txt : vectors data files
 
 # GENERAL FLOW:
 1. User input: number of means (K), level of Accuracy (epsilon), number of iterations, 2 text files of vectors
